@@ -1,0 +1,72 @@
+/* header section style  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #2D25A0;
+    height: 677px;
+    margin-bottom: 70px;
+}
+
+.top-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 300px;
+}
+
+.title-name {
+    margin: 180px 0 200px;
+}
+
+.title-name h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+button {
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.15);
+}
+
+button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fa-arrow-right {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.top-banner {
+    margin: 150px 0 150px;
+    transition: 0.3s ease;
+}
+
+.top-banner img {
+    width: 556px;
+    cursor: pointer;
+}
+
+.top-banner:hover {
+    transform: scale(1.2);
+}
