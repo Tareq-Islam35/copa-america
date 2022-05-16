@@ -1,4 +1,8 @@
-/* header section style  */
+/* -----------------
+header section style
+--------------------  */
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
@@ -7,9 +11,8 @@ body {
     margin: 0;
 }
 
-header {
+.header {
     background-color: #2D25A0;
-    height: 677px;
     margin-bottom: 70px;
 }
 
@@ -72,7 +75,9 @@ button a {
 }
 
 
-/* player section */
+/* -------------------
+player section
+--------------------- */
 
 
 .container {
@@ -111,7 +116,9 @@ button a {
 }
 
 
-/* highlights section */
+/* -----------------
+highlights section
+-------------------- */
 
 
 .highlights {
@@ -145,7 +152,9 @@ button a {
 }
 
 
-/* more news section */
+/* -----------------
+more news section
+------------------- */
 
 .more{
     width: 80%;
@@ -184,7 +193,9 @@ button a {
 
 
 
-/* partner section  */
+/* ---------------
+partner section 
+------------------ */
 
 
 
@@ -211,4 +222,157 @@ button a {
 }
 .partner img{
     width: 200px;
+}
+
+
+
+/* ---------------
+footer section 
+-------------------*/
+
+
+.footer-logo{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.footer-logo img{
+    width: 484px;
+    height: 110px;
+}
+.fa-brands{
+    color: #969BAB;
+    padding: 2px;
+}
+.footer-logo small{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+
+/* ----------------
+Media Queries
+------------------ */
+
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+
+    /* heading part  */
+
+
+    .header, .container, .highlights, .more, .fifa-partners{
+        width: 100%;
+    }
+    .top-part{
+        flex-direction: column;
+        margin: 0 41px;
+    }
+    .title-name{
+        margin: 112px 0 50px;
+    }
+    .title-name h1{
+        font-size: 36px;
+    }
+    .top-banner{
+        margin: 0 0 61px;
+    }
+    .top-banner img{
+        width: 329px;
+    }
+
+    /* players part  */
+
+    .players, .more-news{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 330px;
+        margin-left: 25px;
+        
+    }
+
+
+    /* highlights section */
+
+
+    .all-highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 0 45px;
+    }
+    .copa-america{
+        display: flex;
+        flex-direction: column;
+        width: 329px;
+        height: 299px;
+        margin-bottom: 40px;
+    }
+    .copa-america h2{
+        font-size: 30px;
+    }
+    .match img{
+        padding-top: 29px;
+        width: 328px;
+        height: 248px;
+    }
+
+
+    /* more news section */
+
+
+    .more{
+        margin: 0;
+    }
+    .more h2{
+        font-size: 30px;
+
+    }
+    .more-news{
+        align-items: center;
+    }
+    .news{
+        width: 380px;
+        margin-bottom: 5px;
+    }
+
+
+    /* partner section  */
+
+    
+    .fifa-partners{
+        padding: 0;
+        margin: 0;
+    }
+    .fifa-partners h3{
+        font-size: 20px;
+        text-align: center;
+
+    }
+    .partners{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+        
+    }
+    .partner img{
+        height: 50px;
+        width: 90px;
+    }
+
+
+
+    /* footer section  */
+
+
+    .footer-logo img{
+        width: 272px;
+        height: 63px;
+    }
+
 }
